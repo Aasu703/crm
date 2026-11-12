@@ -1,0 +1,72 @@
+flutter_native_splash:
+  # Platform configuration
+  android: true
+  ios: true
+  web: false
+
+  # Background color - supports multiple formats:
+  # - Hex: "#RRGGBB" or "#AARRGGBB" (with alpha)
+  # - ARGB: "0xFFRRGGBB" (Dart/Flutter format)
+  # - RGB: "rgb(255, 255, 255)"
+  # - Named colors: "white", "black", etc.
+  color: "#defe1e"
+
+  # Optional: Dark mode background color (Android 10+, iOS 13+)
+  color_dark: "#1a1a2e"
+
+  # Optional: Image configuration
+  # Place your splash images in an assets folder (create if needed)
+  # image: assets/splash/splash.png
+  # image_dark: assets/splash/splash_dark.png
+  #
+  # For branding/image mode (logo centered on background):
+  # branding: assets/splash/logo.png
+  # branding_dark: assets/splash/logo_dark.png
+  #
+  # For full-screen image (no background color):
+  # fullscreen: true
+  # fullscreen_dark: true
+
+  # Android 12+ (API 31+) splash screen API configuration
+  android_12:
+    # Image for Android 12+ splash screen (required for icon/branding)
+    image: assets/splash/splash.png
+    image_dark: assets/splash/splash_dark.png
+    # Color for Android 12+ (used if no image provided)
+    color: "#defe1e"
+    color_dark: "#1a1a2e"
+    # Icon background color (for icon mode)
+    icon_background_color: "#defe1e"
+    icon_background_color_dark: "#1a1a2e"
+    # Branding image (shown at bottom of splash)
+    # branding: assets/splash/branding.png
+    # branding_dark: assets/splash/branding_dark.png
+
+  # iOS configuration (use flat keys with ios_ prefix)
+  ios_content_mode: "scaleAspectFill"  # scaleAspectFit, scaleAspectFill, scaleToFill, center, top, bottom, etc.
+  # ios_storyboard: "LaunchScreen"     # Optional: custom launch storyboard name
+
+  # Web configuration (if web: true)
+  # web:
+  #   image_mode: "center"
+  #   background_color: "#defe1e"
+  #   background_color_dark: "#1a1a2e"
+
+  # Flutter native splash removal
+  # Set to false to keep splash until manually removed
+  # remove_after_first_frame: true
+
+  # Android specific
+  # android_gravity: "center"  # center, top, bottom, etc.
+  # android_width: 0.8  # 0.0 to 1.0 (percentage of screen width)
+  # android_height: 0.8  # 0.0 to 1.0 (percentage of screen height)
+
+  # iOS specific
+  # ios_content_mode: "scaleAspectFit"  # scaleToFill, scaleAspectFit, scaleAspectFill, center, top, bottom, etc.
+
+  # Fullscreen mode (hides status bar and navigation bar)
+  # fullscreen: true
+  # fullscreen_dark: true
+
+  # Notifications/permissions (Android 13+)
+  # notifications: false
